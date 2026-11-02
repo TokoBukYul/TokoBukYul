@@ -26,11 +26,11 @@ const products = [
   },
   {
     id: 4,
-    name: "Gula Pasir Gulaku 1kg",
+    name: "Gula Pasir 1kg",
     category: "sembako",
     price: 16500,
     unit: "Bungkus 1kg",
-    image: "https://images.unsplash.com/photo-1581441363689-1f3c3c414635?auto=format&fit=crop&w=300&q=80"
+    image: "https://down-id.img.susercontent.com/file/id-11134207-7rbke-m7a43gujxu52dc"
   },
   {
     id: 5,
@@ -58,11 +58,11 @@ const products = [
   },
   {
     id: 8,
-    name: "Kopi Kapal Api Spesial Mix 10x25g",
+    name: "Kopi Kapal Api",
     category: "minuman",
     price: 14500,
-    unit: "Renceng (10 sachet)",
-    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80"
+    unit: "1 bungkus (1 bungkus)",
+    image: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/89/MTA-180305142/brd-44261_kopi-kapal-api-bubuk-special-60gr_full01-dd222bda.jpg"
   }
 ];
 
