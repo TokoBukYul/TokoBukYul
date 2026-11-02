@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Kelontong Modern</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="brand">
+        <i class="fa-solid fa-store brand-icon"></i>
+        <div>
+          <h1 class="brand-title">Kelontong<span>Ku</span></h1>
+          <p class="brand-subtitle">Belanja Cepat & Murah</p>
+        </div>
+      </div>
+      <button class="cart-btn" id="openCartBtn" aria-label="Keranjang">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Banner Promo -->
+  <section class="container hero">
+    <div class="banner">
+      <div class="banner-text">
+        <h2>Gratis Ongkir Seputar Komplek!</h2>
+        <p>Pesanan diantar langsung ke rumah, bayar di tempat (COD) atau QRIS.</p>
+      </div>
+      <div class="banner-badge">DISKON 10%</div>
+    </div>
+  </section>
+
+  <!-- Search & Category Filters -->
+  <main class="container">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Cari beras, minyak, mie, susu..." />
+    </div>
+
+    <div class="categories" id="categoryContainer">
+      <button class="cat-btn active" data-cat="all">Semua</button>
+      <button class="cat-btn" data-cat="sembako">Sembako</button>
+      <button class="cat-btn" data-cat="minuman">Minuman</button>
+      <button class="cat-btn" data-cat="makanan">Mie & Instan</button>
+      <button class="cat-btn" data-cat="bumbu">Bumbu Dapur</button>
+      <button class="cat-btn" data-cat="kebersihan">Kebersihan</button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+      <!-- Produk di-render dinamis melalui script.js -->
+    </div>
+  </main>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Keranjang Belanja</h3>
+      <button class="close-btn" id="closeCartBtn">&times;</button>
+    </div>
+
+    <div class="cart-body" id="cartItems">
+      <!-- Item keranjang di-render dinamis -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span>Total Pembayaran:</span>
+        <strong id="cartTotal">Rp 0</strong>
+      </div>
+
+      <div class="checkout-form">
+        <label for="custName">Nama Penerima</label>
+        <input type="text" id="custName" placeholder="Contoh: Budi" required />
+
+        <label for="custAddress">Alamat Lengkap / No. Rumah</label>
+        <textarea id="custAddress" rows="2" placeholder="Jl. Mawar No. 12 RT 01/02..." required></textarea>
+
+        <label for="payMethod">Metode Pembayaran</label>
+        <select id="payMethod">
+          <option value="COD (Bayar di Tempat)">COD (Bayar di Tempat)</option>
+          <option value="QRIS / Transfer Bank">QRIS / Transfer Bank</option>
+        </select>
+      </div>
+
+      <button class="btn-checkout" id="whatsappCheckoutBtn">
+        <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+                                                                                                  </html>
+                                                                                                  
