@@ -5,7 +5,7 @@ const products = [
     name: "Minyak Goreng Bimoli 1L",
     category: "sembako",
     price: 18500,
-    unit: "Pouch 1 Liter",
+    unit: "1 Liter",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKCNTcOeK9_L2bXTYeHzwlzJeVoGpKUOiiWH86oePa8WAq8vE2ti7JCDs&s=10"
   },
   {
@@ -14,15 +14,15 @@ const products = [
     category: "sembako",
     price: 68000,
     unit: "Karung 5kg",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=300&q=80"
+    image: "https://coreimages.lottemart.co.id/ord/06/1087953000"
   },
   {
     id: 3,
     name: "Indomie Goreng",
     category: "makanan",
-    price: 3100,
+    price: 4000,
     unit: "Bungkus 85g",
-    image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=300&q=80"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFE2ulJ_BOy3kH3SK7EI1PiVQr4_sYhmRex9mPVcSVxvFkXVuEL4oDmP8Z&s=10"
   },
   {
     id: 4,
@@ -34,11 +34,11 @@ const products = [
   },
   {
     id: 5,
-    name: "Teh Botol Sosro 450ml",
+    name: "Bear brand",
     category: "minuman",
-    price: 6000,
-    unit: "Botol PET",
-    image: "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=300&q=80"
+    price: 10000,
+    unit: "Kalengan",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9G4b1eoc2L8bGyEtohwH5E3EmFrpRDhopDe9uQtw1Q&s=10"
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ const products = [
     category: "bumbu",
     price: 24000,
     unit: "Pouch Refill",
-    image: "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&w=300&q=80"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa8FtNS8Llpk03NtiGv9HeXax4bBWv-kPjcgBONhB5ll5fcUZlEzuAja8&s=10"
   },
   {
     id: 7,
@@ -54,20 +54,20 @@ const products = [
     category: "kebersihan",
     price: 13500,
     unit: "Pouch Refill",
-    image: "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?auto=format&fit=crop&w=300&q=80"
+    image: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/104/MTA-143932496/mama_lemon_mama_lemon_sabun_cuci_piring_-650_ml-_full01_i7j72267.jpg"
   },
   {
     id: 8,
     name: "Kopi Kapal Api",
     category: "minuman",
     price: 14500,
-    unit: "1 bungkus (1 bungkus)",
+    unit: "per bungkus",
     image: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/89/MTA-180305142/brd-44261_kopi-kapal-api-bubuk-special-60gr_full01-dd222bda.jpg"
   }
 ];
 
 // Nomor WhatsApp Toko (Ubah sesuai nomor toko kamu)
-const STORE_PHONE_NUMBER = "6281234567890";
+const STORE_PHONE_NUMBER = "6285204941121";
 
 // State Aplikasi
 let cart = [];
@@ -197,7 +197,7 @@ function checkoutWhatsApp() {
     return;
   }
 
-  let text = `Halo *KelontongKu*, saya ingin memesan barang berikut:\n\n`;
+  let text = `Halo *Buk Yul*, saya ingin memesan barang berikut:\n\n`;
 
   let grandTotal = 0;
   cart.forEach((item, index) => {
