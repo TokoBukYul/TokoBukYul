@@ -2,11 +2,11 @@
 const products = [
   {
     id: 1,
-    name: "Minyak Goreng Bimoli 1L",
+    name: "Minyak Goreng Sunco 1L",
     category: "sembako",
     price: 18500,
     unit: "Pouch 1 Liter",
-    image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=300&q=80"
+    image: "https://share.google/OGoD8ObhYHRtA30Ma"
   },
   {
     id: 2,
