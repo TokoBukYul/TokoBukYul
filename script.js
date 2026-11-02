@@ -258,3 +258,53 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("whatsappCheckoutBtn").addEventListener("click", checkoutWhatsApp);
 });
                    
+  // 1. Tambahkan fungsi baru untuk menghapus item dari keranjang
+function removeFromCart(productId) {
+  cart = cart.filter((item) => item.id !== productId);
+  updateCartUI();
+}
+
+// 2. Perbarui bagian rendering item pada fungsi updateCartUI()
+function updateCartUI() {
+  const cartItemsContainer = document.getElementById("cartItems");
+  const cartBadge = document.getElementById("cartBadge");
+  const cartTotal = document.getElementById("cartTotal");
+
+  const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+  cartBadge.textContent = totalItems;
+
+  cartItemsContainer.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartItemsContainer.innerHTML = `<p class="empty-cart-msg">Keranjang belanja Anda masih kosong.</p>`;
+    cartTotal.textContent = formatIDR(0);
+    return;
+  }
+
+  let totalSum = 0;
+
+  cart.forEach((item) => {
+    const itemTotal = item.price * item.qty;
+    totalSum += itemTotal;
+
+    const itemEl = document.createElement("div");
+    itemEl.className = "cart-item";
+    itemEl.innerHTML = `
+      <div class="cart-item-info">
+        <h4>${item.name}</h4>
+        <p>${formatIDR(item.price)} x ${item.qty} = <strong>${formatIDR(itemTotal)}</strong></p>
+      </div>
+      <div class="cart-controls">
+        <button onclick="updateQty(${item.id}, -1)">-</button>
+        <span>${item.qty}</span>
+        <button onclick="updateQty(${item.id}, 1)">+</button>
+        <button class="delete-btn" onclick="removeFromCart(${item.id})" title="Hapus Item">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </div>
+    `;
+    cartItemsContainer.appendChild(itemEl);
+  });
+
+  cartTotal.textContent = formatIDR(totalSum);
+}
