@@ -418,3 +418,19 @@ body {
   color: var(--text-muted);
   margin-top: 40px;
   }
+
+ /* Styling Tombol Hapus */
+.cart-controls .delete-btn {
+  background: #fee2e2;
+  color: #ef4444;
+  border: 1px solid #fca5a5;
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-controls .delete-btn:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
