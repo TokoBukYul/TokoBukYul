@@ -2,7 +2,7 @@
 const products = [
   {
     id: 1,
-    name: "Minyak Goreng Sunco 1L",
+    name: "Minyak Goreng Bimoli 1L",
     category: "sembako",
     price: 18500,
     unit: "Pouch 1 Liter",
@@ -18,7 +18,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Indomie Goreng Original",
+    name: "Indomie Goreng",
     category: "makanan",
     price: 3100,
     unit: "Bungkus 85g",
