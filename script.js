@@ -6,7 +6,7 @@ const products = [
     category: "sembako",
     price: 18500,
     unit: "Pouch 1 Liter",
-    image: "https://share.google/OGoD8ObhYHRtA30Ma"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKCNTcOeK9_L2bXTYeHzwlzJeVoGpKUOiiWH86oePa8WAq8vE2ti7JCDs&s=10"
   },
   {
     id: 2,
